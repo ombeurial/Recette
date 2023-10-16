@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+Projet de Liste de Recettes
+Ce projet est une application web qui permet aux utilisateurs de parcourir une liste de recettes, d'ajouter de nouvelles recettes et de gérer leurs favoris. L'application est construite en utilisant React et le routage de React Router.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fonctionnalités
+Liste de Recettes: Les utilisateurs peuvent parcourir une liste de recettes provenant d'une API externe (TheMealDB). Les recettes sont affichées sous forme de cartes avec des informations de base telles que le nom et une image.
 
-## Available Scripts
+Détail de la Recette: En cliquant sur une recette, les utilisateurs peuvent voir les détails complets de la recette, y compris les instructions de préparation.
 
-In the project directory, you can run:
+Ajout de Recettes: Les utilisateurs peuvent ajouter de nouvelles recettes en spécifiant le nom de la recette, la recette elle-même et un lien vers une image.
 
-### `npm start`
+Authentification: L'application prend en charge l'authentification des utilisateurs. Les utilisateurs peuvent se connecter, ce qui leur permet de gérer leurs favoris.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Favoris: Les utilisateurs peuvent ajouter des recettes à leurs favoris et les consulter ultérieurement.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Technologies Utilisées
+React: Une bibliothèque JavaScript pour la création d'interfaces utilisateur.
+React Router: Pour gérer la navigation dans l'application.
+Axios: Pour effectuer des requêtes HTTP vers l'API TheMealDB.
+Context API: Pour gérer l'authentification et les favoris.
+Structure du Projet
+src/components: Contient les composants React de l'application.
+src/context: Contient le contexte d'authentification.
+src/App.js: Le composant racine de l'application.
+src/index.js: Le point d'entrée de l'application.

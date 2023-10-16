@@ -1,42 +1,45 @@
-:root{
---background-color:#b05555;
---background-secondcolor:#FAF3E0;;
---background-threecolor:#000000;
---main-color:#46a6ca;
---second-color:#040404;
+:root {
+  --background-color: #b05555;
+  --background-secondcolor: #FAF3E0;
+  --background-threecolor: #000000;
+  --main-color: #46a6ca;
+  --second-color: #040404;
 }
+
 .App {
   text-align: center;
 }
 
-
-.Aligne{
+.Aligne {
   justify-content: center;
-  display:flex;
+  display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
-.recette{
+
+.recette {
   margin: 1%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 400px;
   background-color: var(--background-color);
   border-radius: 15px;
 }
-.RecetteDescription{
-  display:flex;
+
+.RecetteDescription {
+  display: flex;
   flex-direction: row;
 }
+
 .headmenue {
-  background-color:var(--background-threecolor);
+  background-color: var(--background-threecolor);
   display: flex;
   justify-content: center;
-  align-items: center; /* Pour centrer verticalement les éléments */
+  align-items: center;
 }
 
 .headmenue div {
-  margin: 0 10px; /* Espacement horizontal entre les éléments */
+  margin: 0 10px;
 }
 
 .headmenue a {
@@ -54,26 +57,29 @@
 .headmenue a:hover {
   background-color: #ff5733;
 }
-.bacgrounbody{
+
+.bacgrounbody {
   background-color: var(--background-secondcolor);
 }
-.buttonlink{
+
+.buttonlink {
   border-radius: 15px;
 }
+
 .buttontext {
-  text-decoration: none; /* Supprimer la soulignement par défaut des liens */
-  background-color: var(--main-color); /* Couleur de fond du lien */
-  color: var(--second-color); /* Couleur du texte */
-  padding: 10px 20px; /* Espacement intérieur du lien pour plus de visibilité */
-  border-radius: 5px; /* Arrondir les coins du lien */
-  display: inline-block; /* Pour que le lien se comporte comme un bloc en ligne */
-  font-weight: bold; /* Mettre le texte en gras */
-  text-align: center; /* Centrer le texte horizontalement */
-  transition: background-color 0.3s; /* Animation de transition pour le changement de couleur de fond */
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
 }
 
 .buttontext:hover {
-  background-color: #ff5733; /* Couleur de fond au survol du lien */
+  background-color: #ff5733;
 }
 
 form {
@@ -81,7 +87,7 @@ form {
   border-radius: 15px;
   padding: 25px;
   width: 400px;
-  margin: 0 auto; /* Centre le formulaire horizontalement */
+  margin: 0 auto;
 }
 
 label {
@@ -95,6 +101,13 @@ input {
   margin-bottom: 10px;
   border-radius: 5px;
 }
-html{
+
+html {
   background-color: var(--background-secondcolor);
+}
+.imgdetail{
+  width: 40%;
+}
+.detail{
+  justify-content: center;
 }

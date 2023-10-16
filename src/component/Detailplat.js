@@ -25,18 +25,18 @@ function Detailplat() {
       {loading ? (
         <p>Chargement en cours...</p>
       ) : (
-        <div>
-          <Link to="/">Retour</Link>
+        <body>
+          <Link className='buttontext' to="/">Retour</Link>
           {data.map((meal, index) => (
-            <div key={index}>
+            <div className='detail' key={index}>
               <h2>Recette : {meal.strMeal}</h2>
               <div className="RecetteDescription">
-                <img src={meal.strMealThumb} alt={meal.strMeal} />
+                <img className='imgdetail' src={meal.strMealThumb} alt={meal.strMeal} />
                 <p>{meal.strInstructions}</p>
               </div>
             </div>
           ))}
-        </div>
+        </body>
       )}
     </div>
   );
